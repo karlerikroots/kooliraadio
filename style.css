@@ -1,30 +1,16 @@
-.p1 {
-    font-size: 20px;
-    font-family: "PT Sans", sans-serif;
-}
-
-.p2 {
-    font-size: 20px;
-    font-family: "PT Sans", sans-serif;
-}
-
-.p3 {
-    font-size: 20px;
-    font-family: "PT Sans";
-}
-
-h1 {
-    font-family: "PT Sans", sans-serif;
-}
-
 body {
-    margin: 0;
+    margin: 100px 10px 20px 30px;
+    background: white;
 }
 
-.column {
-    /* width: 33.33%; */
-    /* float: left; */
-    padding: 15px;
+p {
+    font-size: 20px;
+    font-family: "PT Sans", sans-serif;
+    background-color: white;
+}
+
+iframe {
+    margin-bottom: 20px;
 }
 
 ul {
@@ -48,7 +34,7 @@ li a {
 }
 
 li a.active {
-    background-color: #04AA6D;
+    background-color: #069661;
     color: white;
 }
 
@@ -60,4 +46,28 @@ li a:hover:not(.active) {
 ol {
     list-style-type: none;
     font-size: 25px;
+}
+
+.container {
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    font-size: 25px;
+}
+
+.menu {
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.content {
+    padding-left: 10px;
+    flex: 1 1 auto;
+    align-self: auto;
 }
