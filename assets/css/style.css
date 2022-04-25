@@ -154,7 +154,7 @@ nav ul li a:hover:not(.active) {
     }
 
     .logo {
-        max-width: calc(100%-4rem);
+        max-width: calc(100% - 4rem);
         height: auto;
         margin: 2rem auto;
     }
