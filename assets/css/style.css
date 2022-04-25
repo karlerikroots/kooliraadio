@@ -56,6 +56,11 @@ iframe {
     margin-bottom: 1rem;
 }
 
+audio {
+    display: block;
+    width: 100%;
+}
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -97,7 +102,7 @@ nav ul li a.active {
 }
 
 nav ul li a:hover:not(.active) {
-    background-color: #555;
+    background-color: rgb(121, 121, 121);
     color: white;
 }
 
@@ -112,7 +117,7 @@ nav ul li a:hover:not(.active) {
     margin: 0 auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 735px) {
     .container {
         display: block;
     }
