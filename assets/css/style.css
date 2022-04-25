@@ -129,7 +129,7 @@ nav ul li a:hover:not(.active) {
     margin: 0 auto;
 }
 
-@media (max-width: 735px) {
+@media (max-width: 767px) {
     .container {
         display: block;
     }
