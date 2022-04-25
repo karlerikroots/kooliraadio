@@ -71,6 +71,7 @@ iframe {
 audio {
     display: block;
     width: 100%;
+    height: 4rem;
 }
 
 .container {
