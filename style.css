@@ -1,79 +1,136 @@
 body {
-    margin: 100px 10px 20px 30px;
+    margin: 2rem;
     background: white;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-weight: 200;
+}
+
+header {
+    padding: 4rem 0;
+}
+
+h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 p {
-    font-size: 20px;
-    font-family: "PT Sans", sans-serif;
+    margin: 0 0 1rem 0;
     background-color: white;
 }
 
-iframe {
-    margin-bottom: 20px;
+form {
+    margin-top: 4rem;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    width: 200px;
-    background-color: whitesmoke;
-    position: relative;
-    height: 100%;
-    overflow: auto;
-    font-size: 20px;
-    text-align: center;
-}
-
-li a {
+label {
     display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
 }
 
-li a.active {
-    background-color: #069661;
-    color: white;
+input, 
+textarea {
+    display: block;
+    margin-bottom: 1rem;
+    padding: .25rem;
+    font-size: .75rem;
+    border: 1px solid #868686;
 }
 
-li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+button {
+    padding: .25rem 1rem;
+    font-size: .75rem;
+    border: 1px solid #868686;
+    background: white;
 }
 
-ol {
-    list-style-type: none;
-    font-size: 25px;
+button:hover {
+    background: whitesmoke;
+}
+
+button:active {
+    color: black;
+}
+
+iframe {
+    margin-bottom: 1rem;
 }
 
 .container {
-
-    display: -ms-flexbox;
-    display: -webkit-flex;
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: stretch;
     align-items: flex-start;
-    font-size: 25px;
 }
 
-.menu {
+nav {
     flex: 0 1 auto;
     align-self: auto;
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 12rem;
+    background-color: whitesmoke;
+    position: relative;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    color: #000;
+    padding: .5rem 1rem;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    background-color: #069661;
+    color: white;
+}
+
+nav ul li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
 .content {
-    padding-left: 10px;
+    padding-left: 2rem;
     flex: 1 1 auto;
-    align-self: auto;
 }
 
 .logo {
-    height: 200px;
+    height: 8rem;
     display: block;
     margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .container {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+    
+    nav ul li {
+        display: inline;
+    }
+
+    .content {
+        padding-left: 0;
+    }
 }

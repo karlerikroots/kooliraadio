@@ -3,72 +3,54 @@
 
 <head>
     <title>Kooliraadio SASS</title>
-
     <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Kooliraadio SASS">
     <meta name="keywords" content="JWG, Jakob Westholmi Gümnaasium, kooliraadio, raadio, SASS">
     <meta name="author" content="Karl Erik Roots">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="stylesheet" href="./style.css">
-    <link ref="icon" type="" href="">
 </head>
 
 <body>
-    <div>
+    <header>
         <img src="kooliraadio.png" alt="Kooliraadio SASS" class="logo">
-
-    </div>
+    </header>
     <div class="container">
-
-        <div class="menuu">
-
-
+        <nav>
             <ul>
                 <li><a href="index.html">RAADIOST</a></li>
                 <li><a href="saated.html">SAATED</a></li>
                 <li><a href="toimetus.html">TOIMETUS</a></li>
                 <li><a class="active" href="kontakt.html">KONTAKT</a></li>
             </ul>
-        </div>
-
+        </nav>
         <div class="content">
-
-            <abbr title="Jakob Westholmi Gümnaasium"><b>JWG</abbr> koduleht:</b>
-            <br>
-            <a href="https://www.westholm.ee">Jakob Westholmi Gümnaasium</a>
-            <br>
-            <b>SASS Facebooki leht:</b>
-            <a href="https://www.facebook.com/jwgsass/"><br>Facebook</a>
-            <br>
-            <b>SASS saated Soundcloudis:</b>
-            <a href="https://www.soundcloud.com/jwg-sass"><br>Soundcloud</a>
+            <p>
+                <a href="https://www.westholm.ee">Kooli kodulehekülg</a>
+            </p>
+            <p>
+                <a href="https://www.facebook.com/jwgsass/">Facebook</a>
+            </p>
+            <p>
+                <a href="https://www.soundcloud.com/jwg-sass">Soundcloud</a>
+            </p>
+            <p>
+                Kevade 8, 10137 Tallinn
+            </p>
+            <form>
+                <label for="eesnimi">Eesnimi</label>
+                <input id="eesnimi" type="text">
+                <label for="perekonnanimi">Perekonnanimi</label>
+                <input id="perekonnanimi" type="text">
+                <label for="email">E-post</label>
+                <input id="email" type="email">
+                <label for="sonum">Sõnum</label>
+                <textarea id="sonum" rows="10" cols="40"></textarea>
+                <button type="submit">Saada</button>
+            </form>
         </div>
-
     </div>
-    <div style="margin-top: 20px;">
-        <form>
-            Eesnimi: <input type="text">
-            <br>
-            Perekonnanimi: <input type="text">
-            <br>
-            Email: <input type="email">
-            <br>
-            <textarea name="message" rows="10" cols="40">Saada meile tagasisidet ja/või soovitusi...</textarea>
-            <br>
-            <input type="submit">
-        </form>
-    </div>
-    <footer>
-        <div style="padding:1px 16px;height: max-content; text-align:left; background-color: gray;">
-
-            <address>
-                jwg.sass@gmail.com
-                <br>
-                Kevade 8, Tallinn
-            </address>
-        </div>
-    </footer>
 </body>
 
 </html>
