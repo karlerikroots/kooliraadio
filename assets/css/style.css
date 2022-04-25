@@ -116,7 +116,7 @@ nav ul li a.active {
 }
 
 nav ul li a:hover:not(.active) {
-    background-color: rgb(121, 121, 121);
+    background-color: #c4c4c4;
     color: white;
 }
 
