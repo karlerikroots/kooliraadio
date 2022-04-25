@@ -20,6 +20,16 @@ p {
     background-color: white;
 }
 
+a,
+a:visited {
+    color: #069661;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 form {
     margin-top: 4rem;
 }
