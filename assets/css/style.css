@@ -89,6 +89,7 @@ nav {
     align-self: auto;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 nav ul {
