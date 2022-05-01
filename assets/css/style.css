@@ -130,9 +130,9 @@ main {
 }
 
 .logo {
-    height: 8rem;
+    height: 13rem;
     display: block;
-    margin: 2rem auto;
+    margin: 4rem auto;
 }
 
 @media (max-width: 767px) {
